@@ -174,8 +174,8 @@ class Messenger(object):
         # if not progress:
         #     footers.append('\n > 下载：' + links)
         footers.append('> Powered by '
-            '[https://github.com/chzealot/dingtalk-stable-diffusion]'
-            '(https://github.com/chzealot/dingtalk-stable-diffusion)'
+            '[kxm]'
+            'kxm'
         )
         contents.append({
             "type": "markdown",
@@ -190,7 +190,7 @@ class Messenger(object):
             "header": {
                 "title": {
                     "type": "text",
-                    "text": "Stable Diffusion Bot"
+                    "text": "kxm Bot"
                 },
                 "logo": "@lALPDtXaA1csu9g4MA"
             },
