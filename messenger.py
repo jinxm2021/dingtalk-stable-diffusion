@@ -40,14 +40,14 @@ class Messenger(object):
             return
         image_content = self._merge_images(images)
         media_id = self.dingtalk_client.upload_to_dingtalk(image_content)
-        title = 'Stable Diffusion Bot'
+        title = 'jxm画图机器人'
         content = ('#### Prompt: %s\n\n'
                    '![image](%s)\n\n'
                    '> cost %ss\n'
                    '> \n'
                    '> Powered by Stable Diffusion\n'
                    '> \n'
-                   '> via https://github.com/chzealot/dingtalk-stable-diffusion\n'
+                   '> via jxm\n'
                    ) % (
                       incoming_message.text.content.strip(),
                       media_id,
