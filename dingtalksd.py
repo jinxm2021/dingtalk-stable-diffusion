@@ -167,7 +167,7 @@ class StableDiffusionBot(dingtalk_stream.ChatbotHandler):
     def txt2img(self, pipe, begin_time, incoming_message):
         image_count = 1
         if self._enable_four_images:
-            image_count = 4
+            image_count = 2
         is_new = True  # create card
         self._messenger.reply_progress(is_new, '0%', image_count, time.time() - begin_time, incoming_message)
         prompt = incoming_message.text.content.strip()
